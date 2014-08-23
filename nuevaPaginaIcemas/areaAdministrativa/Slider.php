@@ -9,42 +9,44 @@
         <link rel="icon" href="../images/favicon.png" type="image/png">
     </head>
     <body style="background-color: #c1c5c7">
-        <form enctype="multipart/form-data" method="post" action="guardarImagen.php">
+        <form enctype="multipart/form-data" method="post" action="guardarImagenSlider.php">
             <div class="container" style="background-color: white">
                 <?php
                 include './menu.php';
                 ?>
-                <section>
-                    <h3> <strong>Módulo del slider</strong></h3>
-                    <div>
-                        <label>Titulo :</label>
-                        <input type="text" 
-                               name="titulo"
-                               placeholder="Titulo de la imagen"
-                               class="form-control"
-                               style="width: 270px"
-                               required="true"
-                               />
-                        <label style="padding-top: 10px">Descripcion:</label>
-                        <textarea placeholder="Descripción..." 
-                                  class="form-control"
-                                  style="width: 270px"
-                                  required="true"
-                                  name="descripcion"
-                                  id="txtDescripcionServicio">
-                            
-                        </textarea>
+                <section class="well col-lg-12">
+                    <article  class="col-lg-6">
+                        <h3> <strong>Módulo de imagenes del SLIDER</strong></h3>
+                        <div>
+                            <label>Titulo :</label>
+                            <input type="text" 
+                                   name="titulo"
+                                   placeholder="Titulo de la imagen"
+                                   class="form-control"
+                                   required="true"
+                                   />
+                            <label style="padding-top: 10px">Descripcion:</label>
+                            <textarea placeholder="Descripción..." 
+                                      class="form-control"
+                                      required="true"
+                                      name="descripcion"
+                                      id="txtDescripcionServicio"
+                                      rows="8">
+
+                            </textarea>
+                            <br>
+                        </div>
+                        <input type="file" required="true"  name="uploadedfile"/>
                         <br>
-                    </div>
-                    
-                    
-                    <input type="file" required="true"  name="uploadedfile"/>
-                    <br>
-                    <input type="submit" 
-                           value="Guardar Imagen"
-                           class="btn btn-success"
-                           title="Cargar imagen"/>
-                    <br>
+                        <input type="submit" 
+                               value="Guardar Imagen"
+                               class="btn btn-success"
+                               title="Cargar imagen"/>
+                        <br>
+                    </article>
+                    <article class="col-lg-6">
+                        
+                    </article>
                 </section>
                 <section>
                     <br>
