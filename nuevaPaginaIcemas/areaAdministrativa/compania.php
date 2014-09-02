@@ -9,30 +9,23 @@
         <link rel="icon" href="../images/favicon.png" type="image/png">
     </head>
     <body style="background-color: #c1c5c7">
-        <form enctype="multipart/form-data" method="post" action="guardarImagenServicios.php">
+        <form enctype="multipart/form-data" method="post" action="guardarNuestraCompania.php">
             <div class="container" style="background-color: white">
                 <?php
                 include './menu.php';
                 ?>
                 <section class="well col-lg-12">
                     <article  class="col-lg-6">
-                        <h3> <strong>Módulo de imagenes de SERIVICOS</strong></h3>
+                        <h3> <strong>Módulo de NUESTRA COMPANIA.</strong></h3>
                         <div>
-                            <label>Titulo :</label>
-                            <input type="text" 
-                                   name="titulo"
-                                   placeholder="Titulo de la imagen"
-                                   class="form-control"
-                                   required="true"
-                                   />
-                            <label style="padding-top: 10px">Descripcion:</label>
+                            <label style="padding-top: 10px">Descripcion de nuestra compania:</label>
                             <textarea placeholder="Descripción..." 
                                       class="form-control"
-
                                       required="true"
                                       name="descripcion"
-                                      id="txtDescripcionServicio"
-                                      rows="8">
+                                      id="txtDescripcionCompania"
+                                      rows="8"
+                                      >
 
                             </textarea>
                             <br>
@@ -40,9 +33,9 @@
                         <input type="file" required="true"  name="uploadedfile"/>
                         <br>
                         <input type="submit" 
-                               value="Guardar Imagen"
+                               value="Guardar"
                                class="btn btn-success"
-                               title="Cargar imagen"/>
+                               />
                         <br>
                     </article>
                     <article class="col-lg-6">
@@ -51,7 +44,7 @@
                 </section>
                 <section>
                     <br>
-                    <table class="table table-hover" id="tablaServicios">
+                    <table class="table table-hover" id="tablaCompania">
                         <thead>
                         <th>
                             Imagen
@@ -85,5 +78,5 @@
     <script type="text/javascript" src="../js/jquery.wp.custom.js"></script>
     <script type="text/javascript" src="../js/jquery.wp.switcher.js"></script>
     <script type="text/javascript" src="../alertify/lib/alertify.js"></script>
-    <script type="text/javascript" src="js/servicios.js"></script>
+    <script type="text/javascript" src="js/compania.js"></script>
 </html>

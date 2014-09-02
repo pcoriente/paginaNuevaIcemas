@@ -54,16 +54,22 @@ class DAO {
         }
         $cn->cerrarBd();
     }
-    
-    function traerInformacion($sql){
-         include '../DaoConnection/coneccion.php';
+
+    function traerInformacion($sql) {
+        include '../DaoConnection/coneccion.php';
         $cn = new coneccion();
-        if (!mysql_query($sql, $cn->Conectarse())) {
+        if (!$datos = mysql_query($sql, $cn->Conectarse())) {
             throw new Exception(mysql_error());
         }
-        $cn->cerrarBd();
+        return $datos;
     }
-    
+    function traerInformacion1($sql) {
+        $cn = new coneccion();
+        if (!$datos = mysql_query($sql, $cn->Conectarse())) {
+            throw new Exception(mysql_error());
+        }
+        return $datos;
+    }
 
     function formatoError($error) {
         $errorPerzonalizado = "<h1> <label style='color: red'>" . $error . "</lable></h1>";

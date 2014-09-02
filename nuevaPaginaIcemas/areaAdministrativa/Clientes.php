@@ -29,7 +29,7 @@
                 </section>
                 <section>
                     <br>
-                    <table class="table table-hover" id="tablaImagenesSlider">
+                    <table class="table table-hover" id="tablaImagenesClientes">
                         <thead>
                         <th>
                             Imagen
@@ -43,8 +43,6 @@
             </div>
         </form>
     </body>
-
-
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/modernizr.custom.js"></script>
@@ -63,5 +61,5 @@
     <script type="text/javascript" src="../js/jquery.wp.custom.js"></script>
     <script type="text/javascript" src="../js/jquery.wp.switcher.js"></script>
     <script type="text/javascript" src="../alertify/lib/alertify.js"></script>
-    <script type="text/javascript" src="js/slider.js"></script>
+    <script src="js/clientes.js" type="text/javascript"></script>
 </html>

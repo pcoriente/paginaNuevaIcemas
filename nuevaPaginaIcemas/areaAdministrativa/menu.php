@@ -24,7 +24,7 @@
                             <li><a href="Clientes.php">CLIENTES</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="compania.php">Compania</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="loginAdministrar.html">CERRAR SESSION</a></li>
